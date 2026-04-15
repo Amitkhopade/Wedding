@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-ivory text-gray-800;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-serif;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-serif;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl font-serif;
+}
+
+p {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-6 py-3 bg-gold-500 text-gray-900 rounded-lg font-semibold hover:bg-gold-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-gold-500 border-2 border-gold-500 rounded-lg font-semibold hover:bg-gold-50 transition-all duration-300;
+}
+
+.btn-accent {
+  @apply px-6 py-3 bg-maroon-500 text-white rounded-lg font-semibold hover:bg-maroon-700 transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-xl shadow-luxury hover:shadow-luxury-lg transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:transform hover:scale-105 transition-transform duration-300;
+}
+
+/* Sections */
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16;
+  }
+}
+
+/* WhatsApp CTA */
+.whatsapp-cta {
+  @apply fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50;
+}
+
+.whatsapp-cta:hover {
+  @apply bg-green-600;
+}
+
+/* Sticky Header */
+.sticky-header {
+  @apply sticky top-0 z-40 bg-ivory shadow-md;
+}
+
+/* Luxury Shadow */
+.luxury-shadow {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Gold Accent Line */
+.gold-accent-top {
+  @apply border-t-4 border-gold-500;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}

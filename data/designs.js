@@ -1,0 +1,157 @@
+export const invitationDesigns = [
+  // Hindu Traditional
+  {
+    id: 1,
+    title: 'Divine Blessings',
+    religion: 'hindu',
+    style: 'traditional',
+    budget: 'mid',
+    price: '₹250 - ₹450',
+    image: 'https://via.placeholder.com/400x500?text=Divine+Blessings',
+    description: 'Elegant Hindu wedding card with Ganesh motif and gold foil accents',
+    details: 'Premium matte paper, embossed details, foil accents',
+  },
+  {
+    id: 2,
+    title: 'Royal Splendor',
+    religion: 'hindu',
+    style: 'royal',
+    budget: 'premium',
+    price: '₹500 - ₹800',
+    image: 'https://via.placeholder.com/400x500?text=Royal+Splendor',
+    description: 'Luxurious card with intricate floral patterns and embossing',
+    details: 'Handmade paper, laser cut details, embossing',
+  },
+  {
+    id: 3,
+    title: 'Modern Grace',
+    religion: 'hindu',
+    style: 'modern',
+    budget: 'mid',
+    price: '₹300 - ₹500',
+    image: 'https://via.placeholder.com/400x500?text=Modern+Grace',
+    description: 'Minimalist Hindu card with contemporary design',
+    details: 'Matt finish, watercolor accents',
+  },
+
+  // Muslim Designs
+  {
+    id: 4,
+    title: 'Crescent Moon',
+    religion: 'muslim',
+    style: 'traditional',
+    budget: 'mid',
+    price: '₹280 - ₹480',
+    image: 'https://via.placeholder.com/400x500?text=Crescent+Moon',
+    description: 'Beautiful Islamic inspired design with geometric patterns',
+    details: 'Premium paper, gold accents, embossed borders',
+  },
+  {
+    id: 5,
+    title: 'Eternal Bond',
+    religion: 'muslim',
+    style: 'modern',
+    budget: 'mid',
+    price: '₹320 - ₹520',
+    image: 'https://via.placeholder.com/400x500?text=Eternal+Bond',
+    description: 'Contemporary Islamic wedding card',
+    details: 'Matte finish with subtle calligraphy',
+  },
+
+  // Christian Designs
+  {
+    id: 6,
+    title: 'Grace & Love',
+    religion: 'christian',
+    style: 'traditional',
+    budget: 'mid',
+    price: '₹250 - ₹450',
+    image: 'https://via.placeholder.com/400x500?text=Grace+Love',
+    description: 'Elegant Christian wedding invitation with cross motif',
+    details: 'Premium cardstock, gold embossing',
+  },
+  {
+    id: 7,
+    title: 'Blessed Union',
+    religion: 'christian',
+    style: 'modern',
+    budget: 'mid',
+    price: '₹300 - ₹500',
+    image: 'https://via.placeholder.com/400x500?text=Blessed+Union',
+    description: 'Modern Christian-inspired design with floral elements',
+    details: 'Matte paper, colored accents',
+  },
+
+  // Sikh Designs
+  {
+    id: 8,
+    title: 'Golden Harmony',
+    religion: 'sikh',
+    style: 'traditional',
+    budget: 'premium',
+    price: '₹450 - ₹700',
+    image: 'https://via.placeholder.com/400x500?text=Golden+Harmony',
+    description: 'Sikh wedding invitation with Khanda symbol',
+    details: 'Premium paper, gold foiling, embossed details',
+  },
+
+  // Destination Wedding
+  {
+    id: 9,
+    title: 'Tropical Paradise',
+    religion: 'all',
+    style: 'modern',
+    budget: 'premium',
+    price: '₹400 - ₹650',
+    image: 'https://via.placeholder.com/400x500?text=Tropical+Paradise',
+    description: 'Perfect for destination weddings with map element',
+    details: 'Matte finish, map details, elegant typography',
+  },
+
+  // Minimal Designs
+  {
+    id: 10,
+    title: 'Minimalist Chic',
+    religion: 'all',
+    style: 'minimal',
+    budget: 'budget',
+    price: '₹150 - ₹300',
+    image: 'https://via.placeholder.com/400x500?text=Minimalist+Chic',
+    description: 'Simple, elegant, and modern design',
+    details: 'Standard paper, premium printing',
+  },
+  {
+    id: 11,
+    title: 'Timeless Elegance',
+    religion: 'all',
+    style: 'minimal',
+    budget: 'mid',
+    price: '₹250 - ₹400',
+    image: 'https://via.placeholder.com/400x500?text=Timeless+Elegance',
+    description: 'Sophisticated minimal design with gold accents',
+    details: 'Premium paper, selective foiling',
+  },
+];
+
+export const filterOptions = {
+  religion: [
+    { label: 'All', value: 'all' },
+    { label: 'Hindu', value: 'hindu' },
+    { label: 'Muslim', value: 'muslim' },
+    { label: 'Christian', value: 'christian' },
+    { label: 'Sikh', value: 'sikh' },
+  ],
+  style: [
+    { label: 'All Styles', value: 'all' },
+    { label: 'Traditional', value: 'traditional' },
+    { label: 'Modern', value: 'modern' },
+    { label: 'Royal', value: 'royal' },
+    { label: 'Minimal', value: 'minimal' },
+  ],
+  budget: [
+    { label: 'All Budgets', value: 'all' },
+    { label: 'Budget Friendly', value: 'budget' },
+    { label: 'Mid-Range', value: 'mid' },
+    { label: 'Premium', value: 'premium' },
+  ],
+};

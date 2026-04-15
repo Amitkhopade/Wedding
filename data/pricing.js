@@ -1,0 +1,115 @@
+export const pricingPlans = [
+  {
+    id: 'basic',
+    name: 'Essential',
+    price: '₹150',
+    description: 'Perfect for minimalist designs',
+    features: [
+      'Digital printing',
+      '100 cards',
+      'Standard paper (200 gsm)',
+      '3 color variations',
+      'Simple design customization',
+      'Standard delivery (7-10 days)',
+      'Basic support',
+    ],
+    popular: false,
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    price: '₹350',
+    description: 'Most popular - luxury feel',
+    features: [
+      'Offset printing',
+      '100 cards',
+      'Premium paper (300 gsm)',
+      'Unlimited color variations',
+      'Full text customization',
+      'Subtle embossing',
+      'Express delivery (3-5 days)',
+      'Phone & WhatsApp support',
+      'Free preview sample',
+    ],
+    popular: true,
+  },
+  {
+    id: 'luxury',
+    name: 'Luxury',
+    price: '₹600',
+    description: 'Ultra-premium experience',
+    features: [
+      'Premium offset printing',
+      '100 cards',
+      'Handmade luxury paper (350+ gsm)',
+      'Full customization',
+      'Gold/Silver foil accents',
+      'Embossing & laser cutting',
+      'Priority delivery (2-3 days)',
+      'Dedicated designer consultation',
+      'Unlimited revisions',
+      'Complimentary matching gift items',
+      '24/7 priority support',
+    ],
+    popular: false,
+  },
+];
+
+export const printingTypes = [
+  {
+    name: 'Digital Printing',
+    description: 'Fast, affordable, perfect for modern designs',
+    speed: 'Fast',
+    quality: 'Good',
+    cost: 'Low',
+  },
+  {
+    name: 'Offset Printing',
+    description: 'Professional, rich colors, ideal for larger quantities',
+    speed: 'Standard',
+    quality: 'Excellent',
+    cost: 'Medium',
+  },
+  {
+    name: 'Foil Stamping',
+    description: 'Golden or silver accents, premium feel',
+    speed: 'Standard',
+    quality: 'Premium',
+    cost: 'High',
+  },
+  {
+    name: 'Embossing',
+    description: 'Raised textures, luxury finish',
+    speed: 'Standard',
+    quality: 'Premium',
+    cost: 'High',
+  },
+  {
+    name: 'Laser Cutting',
+    description: 'Intricate designs, 3D effects',
+    speed: 'Moderate',
+    quality: 'Premium',
+    cost: 'High',
+  },
+];
+
+export const paperOptions = [
+  {
+    weight: '200 gsm',
+    name: 'Standard Paper',
+    description: 'Good quality, versatile',
+    price: 'Base',
+  },
+  {
+    weight: '300 gsm',
+    name: 'Premium Paper',
+    description: 'Luxury feel, professional',
+    price: '+₹50',
+  },
+  {
+    weight: '350+ gsm',
+    name: 'Handmade Paper',
+    description: 'Ultra-premium, exclusive',
+    price: '+₹150',
+  },
+];

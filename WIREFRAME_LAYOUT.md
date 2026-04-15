@@ -1,0 +1,440 @@
+# 🎨 Wireframe & Layout Structure
+
+## Site Architecture Overview
+
+```
+Root (/)
+├── Header (Navigation)
+├── Footer (Always at bottom)
+├── WhatsApp CTA (Floating button)
+└── Main Content (Page-specific)
+```
+
+---
+
+## PAGE LAYOUTS
+
+### 1. HOME PAGE (/)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│         HERO SECTION                    │
+│  [Left: Title + CTA] [Right: Image]     │
+│  - 60/40 split on desktop               │
+│  - Stacked on mobile                    │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│         SERVICES (4 Cards)              │
+│  [Icon] [Title] [Description]           │
+│  ├─ Premium Customization               │
+│  ├─ Luxury Materials                    │
+│  ├─ Fast Delivery                       │
+│  └─ Quality Guaranteed                  │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│      CLIENT TESTIMONIALS (Grid)         │
+│  [Star] [Quote] [Name] [City]           │
+│  3 columns on desktop, 1 on mobile      │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│      FEATURED CATEGORIES (4)            │
+│  [Icon] [Title] [Count]                 │
+│  2x2 grid                               │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│      HIGH CTR SECTION (2 cols)          │
+│  [Left: Key benefits]                   │
+│  [Right: Image/Stat box]                │
+│                                         │
+├─────────────────────────────────────────┤
+│     DISCOUNT CTA SECTION                │
+│  - Maroon background                    │
+│  - Offer: "15% OFF FIRST ORDER"         │
+│  - Code: SHAADI2024                     │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+│  [About][Links][Contact][Social]        │
+└─────────────────────────────────────────┘
+```
+
+**Color Scheme:**
+- Background: Ivory
+- Hero gradient: Ivory → Pastel Pink
+- Services: Gold-50 background
+- Testimonials: White cards
+- CTA: Maroon-700 to Maroon-900
+
+---
+
+### 2. GALLERY PAGE (/gallery)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│        HERO / PAGE TITLE                │
+│   "Explore Our Design Collection"       │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│        FILTER SECTION (3 cols)          │
+│  ┌──────────────────────────────────┐   │
+│  │ Religion | Style | Budget        │   │
+│  │ ○ All   │ ○ All  │ ○ All        │   │
+│  │ ○ Hindu │ ○ Trad │ ○ Budget     │   │
+│  │ ○ Muslim│ ○ Mod  │ ○ Mid        │   │
+│  │ ○ Christ│ ○ Royal│ ○ Premium    │   │
+│  │ ○ Sikh  │ ○ Min  │              │   │
+│  └──────────────────────────────────┘   │
+│  [Reset Filters btn]                    │
+│                                         │
+├─────────────────────────────────────────┤
+│  Results: Showing 45 designs            │
+│                                         │
+│  DESIGN GRID (4 columns on desktop)     │
+│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐   │
+│  │Img   │ │Img   │ │Img   │ │Img   │   │
+│  │Title │ │Title │ │Title │ │Title │   │
+│  │Tags  │ │Tags  │ │Tags  │ │Tags  │   │
+│  │Desc  │ │Desc  │ │Desc  │ │Desc  │   │
+│  │Price │ │Price │ │Price │ │Price │   │
+│  │[CTA] │ │[CTA] │ │[CTA] │ │[CTA] │   │
+│  └──────┘ └──────┘ └──────┘ └──────┘   │
+│                                         │
+│  ... more rows ...                      │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   CAN'T FIND SECTION                    │
+│   [Custom Design CTA]                   │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+└─────────────────────────────────────────┘
+```
+
+**Layout Rules:**
+- Desktop: 4 columns
+- Tablet: 2 columns
+- Mobile: 1 column
+- Cards have hover effects (scale up, shadow)
+
+---
+
+### 3. CUSTOMIZE PAGE (/customize)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│        PAGE TITLE & DESCRIPTION         │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│  STEP INDICATOR (4 steps)               │
+│  [1]─────[2]─────[3]─────[4]            │
+│   ✓       ●       ○       ○             │
+│ Select  Customize Colors  Review        │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│  3-COLUMN LAYOUT                        │
+│  ┌──────────────┬──────────────────┐    │
+│  │              │                  │    │
+│  │ FORM (2 cols)│ PREVIEW (1 col)  │    │
+│  │              │                  │    │
+│  │ STEP 1:      │  Live Preview    │    │
+│  │ [Template]   │  ┌──────────┐    │    │
+│  │ Grid of 6    │  │          │    │    │
+│  │ templates    │  │ 💌       │    │    │
+│  │              │  │ Card     │    │    │
+│  │              │  │ Preview  │    │    │
+│  │ [Back][Next] │  │          │    │    │
+│  │              │  └──────────┘    │    │
+│  │              │                  │    │
+│  │              │ Details:         │    │
+│  │              │ • Template info  │    │
+│  │              │ • Price          │    │
+│  │              │ • Actions        │    │
+│  └──────────────┴──────────────────┘    │
+│                                         │
+│  STEP 2: Details                        │
+│  [Bride Name input]                     │
+│  [Groom Name input]                     │
+│  [Date input]                           │
+│  [Venue textarea]                       │
+│  [Back][Next]                           │
+│                                         │
+│  STEP 3: Design Elements                │
+│  Color Picker (7 colors)                │
+│  Icon Selector (6 icons)                │
+│  Font Selector (2 fonts)                │
+│  [Back][Next]                           │
+│                                         │
+│  STEP 4: Review                         │
+│  [Summary box]                          │
+│  [Order Button]                         │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+└─────────────────────────────────────────┘
+```
+
+**Component Structure:**
+- Left panel: Form (scrollable)
+- Right panel: Preview (sticky on desktop)
+- Mobile: Stacked layout
+
+---
+
+### 4. PRICING PAGE (/pricing)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│          PAGE TITLE                     │
+│    "Simple, Transparent Pricing"        │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│      PRICING PLANS (3 cards)            │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐│
+│  │ Essential│ │ Premium* │ │ Luxury   ││
+│  │ POPULAR  │ │ ⭐⭐⭐  │ │          ││
+│  │          │ │          │ │          ││
+│  │₹150/card │ │₹350/card │ │₹600/card ││
+│  │For 100   │ │For 100   │ │For 100   ││
+│  │          │ │          │ │          ││
+│  │✓ Feature1│ │✓ Feature1│ │✓ Feature1││
+│  │✓ Feature2│ │✓ Feature2│ │✓ Feature2││
+│  │✗ Feature3│ │✓ Feature3│ │✓ Feature3││
+│  │          │ │          │ │          ││
+│  │[Get Quote]│ │[Get Quote]│ │[Get Quote]│
+│  │          │ │          │ │          ││
+│  └──────────┘ └──────────┘ └──────────┘│
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   PRINTING TYPES (5 cards)              │
+│  [Digital ] [Offset] [Foil  ] [Emb.] […]
+│   Speed:     Speed:    Speed:  Speed:   
+│   Quality:   Quality:  Quality: Quality:  
+│   Cost:      Cost:     Cost:   Cost:    
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   PAPER OPTIONS (3 cards)               │
+│  [Standard] [Premium] [Handmade]        │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   FEATURE COMPARISON TABLE              │
+│   (Horizontal scroll on mobile)         │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   CTA SECTION (Dark background)         │
+│   [Ready to Order?]                     │
+│   [WhatsApp button]                     │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+└─────────────────────────────────────────┘
+```
+
+---
+
+### 5. ABOUT PAGE (/about)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│        PAGE TITLE & SUBTITLE            │
+│        "Our Story"                      │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│  2-COLUMN LAYOUT (Content + Visual)     │
+│  ┌──────────────┬──────────────────┐    │
+│  │ Our Story    │  [Visual Box]    │    │
+│  │ Lorem ipsum… │  ┌────────────┐  │    │
+│  │              │  │ Mission    │  │    │
+│  │              │  │ Vision     │  │    │
+│  │              │  └────────────┘  │    │
+│  └──────────────┴──────────────────┘    │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   CORE VALUES (4 cards)                 │
+│  [Icon][Title][Desc]                    │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   TIMELINE                              │
+│  2015 → 2017 → 2019 → 2021 → 2023 → 2024
+│   (Vertical line with milestones)       │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   WHY CHOOSE US (Features)              │
+│  2x2 grid of cards                      │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   TEAM (4 members)                      │
+│   [Avatar][Name][Role]                  │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+└─────────────────────────────────────────┘
+```
+
+---
+
+### 6. CONTACT PAGE (/contact)
+
+```
+┌─────────────────────────────────────────┐
+│           HEADER / NAVIGATION           │
+├─────────────────────────────────────────┤
+│                                         │
+│        PAGE TITLE                       │
+│        "Get in Touch"                   │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│  3-COLUMN LAYOUT                        │
+│  ┌────────────┬──────────────────────┐  │
+│  │ Info (1c)  │ Form (2 columns)     │  │
+│  │            │                      │  │
+│  │[📞 Phone]  │ [Full Name]          │  │
+│  │[✉️ Email]  │ [Email]              │  │
+│  │[📍 Address]│ [Phone]              │  │
+│  │[🕐 Hours]  │ [Wedding Date]       │  │
+│  │            │ [Requirements]       │  │
+│  │[WhatsApp]  │ [Checkbox]           │  │
+│  │            │ [Submit]             │  │
+│  └────────────┴──────────────────────┘  │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│        MAP SECTION                      │
+│  [Google Map Embed]                     │
+│  (Full width, height: 400px)            │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│   FAQ GRID (2 columns)                  │
+│  [Q1][Q2]                               │
+│  [Q3][Q4]                               │
+│  [Q5][Q6]                               │
+│                                         │
+├─────────────────────────────────────────┤
+│            FOOTER                       │
+└─────────────────────────────────────────┘
+```
+
+---
+
+## RESPONSIVE BREAKPOINTS
+
+| Screen | Width | Layout |
+|--------|-------|--------|
+| Mobile | <640px | 1 column, stacked |
+| Tablet | 640-1024px | 2 columns |
+| Desktop | >1024px | 3-4 columns or 2-col with sidebar |
+
+---
+
+## COMPONENT REUSABILITY
+
+### Header Component
+- Fixed position
+- Responsive menu (hamburger on mobile)
+- Logo + Navigation + WhatsApp CTA
+
+### Footer Component
+- 4-column layout (on desktop)
+- Social icons
+- Contact info
+- Quick links
+
+### Card Component (Reusable)
+- Used for: Designs, Testimonials, Services, Features
+- Standard padding & shadow
+- Hover effects
+- Responsive
+
+### Form Component
+- Consistent styling
+- Validation feedback
+- Accessibility
+
+---
+
+## ANIMATION & MICRO-INTERACTIONS
+
+### On Hover:
+- Cards: Scale 1.05, shadow increase
+- Buttons: Color shift, shadow glow
+- Images: Opacity change
+- Links: Color transition
+
+### On Scroll:
+- Fade-in effect for sections
+- Parallax for hero section
+- Staggered animations for lists
+
+### On Focus:
+- Form inputs: Ring highlight
+- Links: Underline animation
+- Buttons: Cursor change
+
+---
+
+## Accessibility Features
+
+- Alternative text for images
+- ARIA labels for icons
+- Keyboard navigation
+- Focus states visible
+- Color contrast ratio > 4.5:1
+- Semantic HTML structure
+
+---
+
+## Search Engine Optimization (SEO)
+
+- Meta tags on all pages
+- Heading hierarchy (H1 → H2 → H3)
+- Image alt attributes
+- Schema markup ready
+- Open Graph tags
+- Twitter Card tags
+
+---
+
+## Key Layout Principles
+
+1. **Whitespace**: 40-50px padding between major sections
+2. **Hierarchy**: Title > Subheading > Body > Caption
+3. **Consistency**: All cards follow same design
+4. **Contrast**: Gold (#FFC107) on light backgrounds
+5. **Alignment**: 8px grid system
+6. **Responsive**: Mobile-first approach
+7. **Conversion**: CTA buttons above fold on every page
+
