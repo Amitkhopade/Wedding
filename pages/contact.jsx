@@ -24,7 +24,7 @@ export default function Contact() {
     const whatsappMessage = encodeURIComponent(
       `Hi! I'm interested in your wedding invitation services.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nWedding Date: ${formData.weddingDate}\nRequirements: ${formData.requirements}`
     );
-    window.open(`https://wa.me/919999999999?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/919823444899?text=${whatsappMessage}`, '_blank');
     setSubmitted(true);
     setTimeout(() => {
       setFormData({ name: '', email: '', phone: '', weddingDate: '', requirements: '' });
@@ -67,7 +67,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600 mb-1">+91 99999 99999</p>
+                    <p className="text-gray-600 mb-1">+91 9823444899</p>
                     <p className="text-sm text-gray-500">Mon-Sat, 10AM-7PM IST</p>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600 mb-1">hello@shaadi-invitation.com</p>
+                    <p className="text-gray-600 mb-1">KHOPADE.AMIT91@GMAIL.COM</p>
                     <p className="text-sm text-gray-500">Response within 24 hours</p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function Contact() {
 
                 {/* WhatsApp CTA */}
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/919823444899"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300 justify-center"
