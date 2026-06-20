@@ -1,4 +1,17 @@
-# Dependencies
+node_modules/
+.next/
+out/
+.env
+.env.*
+npm-debug.log*
+.DS_Store
+.vscode/
+.idea/
+coverage/
+dist/
+*.log
+/.pnp
+/.pnp.js# Dependencies
 node_modules/
 /.pnp
 .pnp.js
