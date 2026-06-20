@@ -3,7 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: false,
-    domains: ['via.placeholder.com', 'api.placeholder.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.placeholder.com',
+      },
+    ],
   },
   compress: true,
 };

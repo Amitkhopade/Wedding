@@ -1,4 +1,4 @@
-import { validateCredentials, generateToken } from '../../utils/auth';
+import { validateCredentials, generateToken } from '../../../utils/auth';
 
 export default function handler(req, res) {
   if (req.method !== 'POST') {

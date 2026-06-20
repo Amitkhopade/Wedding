@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import AdminSidebar from '../../components/AdminSidebar';
 import { ProtectedRoute } from '../../components/ProtectedRoute';
 import designs from '../../data/designsLibrary';
-import { Check, X, Edit2, Trash, Upload, MagnifyingGlass } from 'phosphor-react';
+import { Check, X, PencilSimple, Trash, Upload, MagnifyingGlass } from 'phosphor-react';
 
 function DesignManagementContent() {
   const [designList, setDesignList] = useState(designs);

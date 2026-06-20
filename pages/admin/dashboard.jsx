@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import AdminSidebar from '../../components/AdminSidebar';
 import { ProtectedRoute } from '../../components/ProtectedRoute';
 import designs from '../../data/designsLibrary';
-import { Package, Users, TrendingUp, CurrencyDollar } from 'phosphor-react';
+import { Package, Users, TrendUp, CurrencyDollar } from 'phosphor-react';
 
 function AdminDashboardContent() {
   const [stats, setStats] = useState({
@@ -69,7 +69,7 @@ function AdminDashboardContent() {
                 <p className="text-gray-600 text-sm font-medium">Premium Designs</p>
                 <p className="text-3xl font-bold text-gray-900 mt-2">{stats.premiumCount}</p>
               </div>
-              <TrendingUp size={40} className="text-purple-500 opacity-20" />
+              <TrendUp size={40} className="text-purple-500 opacity-20" />
             </div>
           </div>
 
